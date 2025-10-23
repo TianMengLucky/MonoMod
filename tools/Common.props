@@ -52,6 +52,7 @@
     <!-- Package locking -->
     <RestorePackagesWithLockFile>false</RestorePackagesWithLockFile>
     <RestoreLockedMode Condition="'$(ContinuousIntegrationBuild)' == 'true'">true</RestoreLockedMode>
+    <RestoreEnablePackagePruning Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework' ">false</RestoreEnablePackagePruning>
   </PropertyGroup>
 
   <!-- Debug -->
